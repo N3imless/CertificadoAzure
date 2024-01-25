@@ -20,7 +20,6 @@
     <!-- Optional - CSS SVG Icons (Font Awesome) -->
     <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
 
- 
     <!-- Android -->
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#333333">
@@ -37,15 +36,15 @@
         -->
 
         <section class="bg-black-blue aligncenter">
-            <span class="background dark" style="background-image:url(./static/images/background.jpeg)"></span>
-             <!--.wrap = container (width: 90%) with fadein animation -->
-             <div class="wrap">
-               <p class="text-subtitle">Equipo patata presenta...</p>
-               <h1 class="text-landing">Certificaciones Azure</h1>
-               <p><img class="text-symbols" src="./static/images/logos/azure.png"> </p>
-             </div>
-             <!-- .end .wrap -->
-           </section>
+          <span class="background dark" style="background-image:url(./static/images/background.jpeg)"></span>
+            <!--.wrap = container (width: 90%) with fadein animation -->
+            <div class="wrap">
+              <p class="text-subtitle">Equipo patata presenta...</p>
+              <h1 class="text-landing">Certificaciones Azure</h1>
+              <p><img class="text-symbols" src="./static/images/logos/azure.png"> </p>
+            </div>
+            <!-- .end .wrap -->
+          </section>
         <section>
             <ul class="flexblock border">
                 <li>
@@ -54,7 +53,6 @@
                     <h3><a href="#slide=3">Certificacion Azure AZ-900</a></h3>
                     <ol>
                       <li class="alignleft"><img src="static/images/logos/AZ900FUN.png" alt="AZ-900" width="150"></li>
-                     
                     </ol>
                   </div>
                 </li>
@@ -264,6 +262,163 @@
             <ul>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/GruposAdministracion.png" alt="GruposAdministracion" width="300"></li>
             </ul>
+
+            <h2><strong>Descripcion de los servicios de proceso y redes de Azure</strong></h2>
+            <p>Comparación de los tipos de proceso, incluidos los contenedores, las máquinas virtuales y las funciones</p>
+            <h4>Máquinas Virtuales (VMs):</h4>
+            <p>Este servicio proporciona maquinas virtuales en la nube</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/Vms.png" alt="Vms" width="300"></li>
+            </ul>
+            <h4>Azure Kubernetes Service (AKS):</h4>
+            <p>Este servicio simplifica la implementacion y administracion de aplicaciones en contenedores</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/AKS.png" alt="AKS" width="300"></li>
+            </ul>
+            <h4>Azure Container Instances (ACI):</h4>
+            <p>Permite ejecutar contenedores sin tener que gestionar la infraestructura subyacente.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/ACI.png" alt="ACI" width="300"></li>
+            </ul>
+            <h4>Azure App Service:</h4>
+            <p>Proporciona una plataforma completamente administrada para el desarrollo, la implementación y la escalabilidad de aplicaciones web.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/AzureAppService.png" alt="AzureAppService" width="300"></li>
+            </ul>
+            <h2><strong>Descripción de las opciones de máquina virtual, como Azure Virtual Machines, Azure Virtual Machine Scale Sets, conjuntos de disponibilidad y Azure Virtual Desktop</strong></h1>
+            <h4>Azure Virtual Machines (VM):</h4>
+            <p>son máquinas virtuales flexibles que se ejecutan en la nube de Microsoft Azure.</p>
+            
+            <h4>Azure Virtual Machine Scale Sets:</h4>
+            <p>Permite implementar y administrar un conjunto de maquinas virtuales identicas. Estos se escalan automaticamente según la carga de trabajo.</p>
+            
+            <h4>Conjuntos de disponibilidad (Availability Sets):</h4>
+            <p>Estos ayudan a garantizar la alta disponibilidad y la toleranciaa a fallos de las aplicaciones que se ejecutan en las maquinas virtuales:
+              Estan diseñados para distribuir las maquinas de una manera en la que reduzca el riesgo de fallos</p>
+            <h2><strong>Descripción de los recursos necesarios para las máquinas virtuales</strong></h2>
+            <p>Depende del uso al que le vayas a dar a la maquinas virtuales.</p>
+            <p>Por ejemplo, las MV Serie A las mas usadas son:</p>
+
+            <table>
+              <tr>
+                <th>Serie A</th>
+                <th>Configuración de CPU:</th>
+                <th>Configuración de Memoria:</th>
+                <th>Almacenamiento:</th>
+              </tr>
+              <tr>
+                <td>Standard_A2</td>
+                <td>Núcleos de CPU: 2.</td>
+                <td>RAM: 4 GB.</td>
+                <td>Disco Temporal: 20 GB (SSD).</td>
+              </tr>
+              <tr>
+                <td>Standard_A4</td>
+                <td>Núcleos de CPU: 8.</td>
+                <td>RAM: 14 GB.</td>
+                <td>Disco Temporal: 40 GB (SSD).</td>
+              </tr>
+              <tr>
+                <td>Standard_A8</td>
+                <td>Núcleos de CPU: 8.</td>
+                <td>RAM: 56 GB.</td>
+                <td>Disco Temporal: 160 GB (SSD).</td>
+              </tr>            
+            </table>
+            <p>De las Series B son:</p>
+
+            <table>
+              <tr>
+                <th>Serie B</th>
+                <th>Configuración de CPU:</th>
+                <th>Configuración de Memoria:</th>
+                <th>Almacenamiento:</th>
+              </tr>
+              <tr>
+                <td>Standard_B2s</td>
+                <td>Núcleos de CPU: 2.</td>
+                <td>RAM: 4 GB.</td>
+                <td>Disco Temporal: 16 GB (SSD).</td>
+              </tr>
+              <tr>
+                <td>Standard_B4ms</td>
+                <td>Núcleos de CPU: 4.</td>
+                <td>RAM: 16 GB.</td>
+                <td>Disco Temporal: 32 GB (SSD).</td>
+              </tr>
+              <tr>
+                <td>Standard_B8ms</td>
+                <td>Núcleos de CPU: 8.</td>
+                <td>RAM: 32 GB.</td>
+                <td>Disco Temporal: 64 GB (SSD).</td>
+              </tr>            
+            </table>
+            <p>De las Serie F son:</p>
+
+            <table>
+              <tr>
+                <th>Serie F</th>
+                <th>Configuración de CPU:</th>
+                <th>Configuración de Memoria:</th>
+                <th>Almacenamiento:</th>
+              </tr>
+              <tr>
+                <td>Standard_F4s</td>
+                <td>Núcleos de CPU: 4.</td>
+                <td>RAM: 8 GB.</td>
+                <td>Disco Temporal: 32 GB (SSD).</td>
+              </tr>
+              <tr>
+                <td>Standard_F8s</td>
+                <td>Núcleos de CPU: 8.</td>
+                <td>RAM: 16 GB.</td>
+                <td>Disco Temporal: 64 GB (SSD).</td>
+              </tr>
+              <tr>
+                <td>Standard_F16s</td>
+                <td>Núcleos de CPU: 16.</td>
+                <td>RAM: 32 GB.</td>
+                <td>Disco Temporal: 128 GB (SSD).</td>
+              </tr>            
+            </table>
+            <h2>Descripción de las opciones de hospedaje de aplicaciones, incluidas las aplicaciones web, los contenedores y las máquinas virtuales</h2>
+            <p>Azure proporciona diferentes formas de hospedar y ejecutar las aplicaciones en funcion de sus necesidades.</p>
+            <p>De las que mas se utilizan son:</p>
+            <ul>
+              <li>Azure App Service</li>
+              <li>Azure Functions</li>
+              <li>Azure Kubernetes Service (AKS)</li>
+              <li>Azure Virtual Machines (VMs)</li>
+              <li>Azure Batch</li>
+            </ul>
+            <p>Una opcion de hospedaje que nos deberia ser familiar es: (VMs).</p>
+            <p>Que son maquinas virtuales en la nube.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/Azure-Virtual-Machine-2.webp" alt="Azure-Virtual-Machine-2" width="300"></li>
+            </ul>
+            <h2><strong>Descripción de las redes virtuales, incluido el propósito de Azure Virtual Networks, las subredes virtuales de Azure, el emparejamiento, Azure DNS, VPN Gateway y ExpressRoute</strong></h2>
+            <p><strong>Azure Virtual Networks (Redes Virtuales de Azure):</strong></p>
+            <p>Es un servicio de azure que permite crear redes privadas en la nube, proporciona aislamiento de recursos, control sobre la conectividad y una extension de la infraestructura de red local a la nube</p>
+            <p><strong>Subredes virtuales de Azure:</strong></p>
+            <p>puedes dividir las redes en subredes para organizar y segmentar los recursos dentro de la virtualNet.</p>
+            <p><strong>Emparejamiento de Red (VNet Peering):</strong></p>
+            <p>permite conectar dos virtualNets dentro de la misma region de azure, esto facilita la comunicación directa entre recursos de VNets emparejadas ( como si estuviesen en la misma red)</p>
+            <p><strong>Azure DNS:</strong></p>
+            <p>Este servicio proporciona nombres de dominio en la nube.</p>
+            <p><strong>VPN Gateway:</strong></p>
+            <p>Este servicio permite establecer conexiones seguras y cifradas entre redes locales y redes virtuales de azure</p>
+            <p><strong>ExpressRoute:</strong></p>
+            <p>Este servicio permite una conexión desde la infraestructura local hasta Microsoft, para tener una conexion mas rapida, mas fiable y con menor lllatencia en comparacion a el acceso publico a traves de internet</p>
+            <h4>Definir puntos de conexión públicos y privados</h4>
+            <p><strong>Puntos de conexión públicos:</strong></p>
+            <p>Son como se exponen los servicios y recursos a través de la Internet pública. Los usuarios y aplicaciones pueden acceder a estos servicios utilizando direcciones IP públicas</p>
+            <p><strong>Ejemlo:</strong></p>
+            <p>Un sitio web público hospedado en Azure App Service con una dirección URL accesible desde Internet</p>
+            <p><strong>Puntos de conexión Privados:</strong></p>
+            <p>Se refiere a la configuración de servicios y recursos para que solo sean accesibles desde redes privadas</p>
+            <p><strong>Ejemlo:</strong></p>
+            <p>Una base de datos en Azure configurada con un punto de conexión privado solo accesible desde dentro de una red virtual específica</p>
+            
             <p><a href="#slide=2"><strong>Volver</strong></a></p>
         </section>
         <section>
@@ -311,9 +466,121 @@
               <p>Las asignaciones de roles sirven para controlar el acceso a los recursos de Azure. El control de acceso se basa en el rol de Azure (Azure RBAC) tiene varios roles integrados de Azure que se pueden asignar a usuarios, grupos, entidades de servicio e identidades administradas.</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/Azure.png" alt="Azure" width="300"></li>
               <p>Los roles integrados tienen unos permisos específicos para cada uno de ellos, si no satisfacen las necesidades concretas de la organización se pueden crear roles personalizados de Azure propios.
-                 Puede buscar permisos por palabra clave, como permisos de máquina virtual o de facturación. También puede descargar todos los permisos como un archivo CSV y, a continuación, buscar en este archivo.</p>
+                Puede buscar permisos por palabra clave, como permisos de máquina virtual o de facturación. También puede descargar todos los permisos como un archivo CSV y, a continuación, buscar en este archivo.</p>
             </ul>
-            <p><a href="#slide=2"><strong>Volver</strong></a></p>
+            <h2>Administración del acceso de usuarios a los recursos de Azure</h2>
+            <ul>
+              <li><strong>Administración de roles de Azure integrados.</strong></li>
+            </ul>
+            <p>Las asignaciones de roles sirven para controlar el acceso a los recursos de Azure. El control de acceso se basa en el rol de Azure (Azure RBAC) tiene varios roles integrados de Azure que se pueden asignar a usuarios, grupos, entidades de servicio e identidades administradas.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/RBAC.png" alt="RBAC" width="300"></li>
+            </ul>
+            <p>Los roles integrados tienen unos permisos específicos para cada uno de ellos, si no satisfacen las necesidades concretas de la organización se pueden crear roles personalizados de Azure propios.</p>
+            <p>Puede buscar permisos por palabra clave, como permisos de máquina virtual o de facturación. También puede descargar todos los permisos como un archivo CSV y, a continuación, buscar en este archivo.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/Billing permissions.png" alt="Billing permissions" width="300"></li>
+            </ul>
+            <ul>
+              <li><strong>Asignación de roles en distintos ámbitos y Interpretación de las asignaciones de acceso.</strong></li>
+            </ul>
+            <p>Los roles otorgan ciertos permisos, los cuales se pueden aplicar también según un ámbito y no se asigne a todo inquilino. Los recursos a los que se aplica una asignación de funciones también es un ámbito.</p>
+            <ul>
+              <li><strong>Ámbito Inquilino:</strong></li>
+            </ul>
+            <p>Los permisos o rol para una persona en concreto.</p>
+            <ul>
+              <li><strong>Ámbito administrativo:</strong></li>
+            </ul>
+            <p>Otorgar un rol a una unidad administrativa, por ejemplo Departamento de soporte técnico.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/FIMDEV.png" alt="FIMDEV" width="300"></li>
+            </ul>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/Billing admin.png" alt="Billing admin" width="300"></li>
+            </ul>
+            <ul>
+              <li>Ámbito en la aplicación:</li>
+            </ul>
+            <p>En este caso, hay que buscar la aplicación que deseamos y luego le aplicamos el rol, seleccionando a los usuarios o el grupo a los que se quiera asignar este rol. </p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/Testapp.png" alt="Testapp" width="300"></li>
+            </ul>
+            <h2><strong>Implementación y administración de Azure Policy</strong></h2>
+            <p>Azure Policy es un servicio de microsoft que nos permite administrar políticas de gestión y garantizar que se cumplan. Estas políticas pueden estar referidas a medidas de seguridad o incluso gestión de costes y recursos.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/AzurePolicy.png" alt="AzurePolicy" width="300"></li>
+            </ul>
+            <h2><strong>Configuración de bloqueos de recursos</strong></h2>
+            <p>Un administrador puede bloquear un recurso, grupo de recursos o suscripciones para que no puedan ser eliminados o modificados. Esto invalida los permisos que pueda tener un usuario.
+              Esto podemos realizarlo a nivel gráfico añadiendo lo bloqueo a Eliminar y Solo Lectura. Y en línea de comandos se llama <strong>CanNotDelete</strong> y <strong>ReadOnly</strong>.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/ExampleGroup.png" alt="ExampleGroup" width="300"></li>
+              </ul>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/ProtetDocument.png" alt="ProtetDocument" width="300"></li>
+              </ul>
+              <h2><strong>Aplicación y administración de etiquetas en recursos</strong></h2>
+              <p>Las etiquetas son elementos que nos permiten identificar, a modo organizativo, los recursos. </p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/demoGroup.png" alt="demoGroup" width="300"></li>
+              </ul>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/EditTags.png" alt="EditTags" width="300"></li>
+              </ul>
+              <h2><strong>Administración de grupos de recursos</strong></h2>
+              <p>Un grupo de recursos nos permite almacenar de forma relacionada distintos recursos. Estos nos permiten ubicar los recursos en un mismo lugar.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/ResourceGroups.png" alt="ResourceGroups" width="300"></li>
+              </ul>
+              <h2><strong>Administración de suscripciones</strong></h2>
+              <p>Las suscripciones permiten administrar y gestionar los servicios utilizados, permitiendo controlar los gastos, gestionar el acceso a los costos, organizar los recursos y mantener las políticas de la empresa, dentro de los límites definidos de facturación.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Adminsuscripciones.png" alt="Adminsuscripciones" width="300"></li>
+              </ul>
+              <h2><strong>Planificación para administrar costos de Azure</strong></h2>
+              <p>Para calcular el coste de un servicio Azure podemos utilizar tres herramientas:</p>
+              <ul>
+                <li>Calculadora de precios de Azure</li>
+                <li>Hoja de precios de Azure</li>
+                <li>Portal de Azure</li>
+              </ul>
+              <h4><strong>Calculadora de precios</strong></h4>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/CalculadoraPrecios.png" alt="CalculadoraPrecios" width="300"></li>
+              </ul>
+              <h4><strong>Hoja de precios Azure</strong></h4>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/HojaPreciosAzure.png" alt="HojaPreciosAzure" width="300"></li>
+              </ul><h4><strong>Portal de Azure</strong></h4>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/PortalAzure.png" alt="PortalAzure" width="300"></li>
+              </ul>
+              <h2><strong>Supervisión de los costos de Azure</strong></h2>
+              <p>Para supervisar los costos podemos utilizar dos herramientas:</p>
+              <ul>
+                <li>Análisis de costos</li>
+                <li>Alertas de presupuesto y de costos</li>
+              </ul>
+              <h4><strong>Análisis de costos</strong></h4>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/AnalisisCostes.png" alt="AnalisisCostes" width="300"></li>
+              </ul>
+              <h4><strong>Alertas de presupuesto y de costos</strong></h4>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/CostbyMonths.png" alt="CostbyMonths" width="300"></li>
+              </ul>
+              <h4><strong>Facturación</strong></h4>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Facturacion.png" alt="Facturacion" width="300"></li>
+              </ul>
+              <h4><strong>Grupos de administración de Azure</strong></h4>
+              <p>Los grupos de administración permiten aplicar directivas a un grupo. Estas directivas se aplicarían a las suscripciones y recursos anidados permitiendo únicamente realizar las tareas a los grupos permitidos.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Management.png" alt="Management" width="300"></li>
+              </ul>
+
+              <p><a href="#slide=2"><strong>Volver</strong></a></p>
         </section>
         <section class="slide-bottom">
           <div class="wrap">
@@ -337,9 +604,9 @@
     </main>
     <!-- end main -->
 
-   <!-- A global footer
+  <!-- A global footer
 
-     <footer role="contentinfo">
+    <footer role="contentinfo">
       <div class="wrap">
         <p>An <a href="https://github.com/webslides/webslides">open source solution</a>, by <a href="https://twitter.com/webslides">@webslides</a>.</p>
       </div>
