@@ -425,6 +425,44 @@
             <p><strong>Ejemlo:</strong></p>
             <p>Una base de datos en Azure configurada con un punto de conexión privado solo accesible desde dentro de una red virtual específica</p>
             
+            <h2><strong>Descripción de los servicios de almacenamiento de Azure</strong></h2>
+            <ul>
+              <li>Comparación de los servicios de almacenamiento de Azure</li>
+              <li>Descripción de los niveles de almacenamiento</li>
+              <li>Descripción de las opciones de redundancia</li>
+              <li>Descripción de las opciones de la cuenta de almacenamiento y los tipos de almacenamiento</li>
+              <li>Identificación de opciones para mover archivos, incluidos AzCopy, Explorador de Azure Storage y Azure File Sync</li>
+              <li>Descripción de las opciones de migración, incluidas Azure Migrate y Azure Data Box</li>
+            </ul>
+            <h4><strong>Comparación de los servicios de almacenamiento de Azure</strong></h4>
+            <p>Si comparamos los servicios de almacenamiento de Azure por ejemplo con los de AWS básicamente es que Amazon tiene una mayor cuota de mercado en la nube que Azure. 
+              AWS ofrece más productos y servicios en la nube que Azure.</p>
+            <h4><strong>Descripción de los niveles de almacenamiento</strong></h4>
+            <p>Los niveles de almacenamiento se usan para que pueda almacenar los datos de blobs de la manera más rentable en función de cómo se usen.</p>
+            <h4><strong>Descripción de las opciones de redundancia</strong></h4>
+            <p>Las opciones de redundancia garantiza que tus datos estarán disponibles incluso durante una interrupción regional.</p>
+            <p>En caso de interrupción se podra conectar a otra zona cercana.</p>
+            <ul>
+              <li style="text-align: center;list-style-type: none;"><img src="static/images/GlobalDataCenter.png" alt="GlobalDataCenter" width="300"></li>
+            </ul>
+            <h4><strong>Descripción de las opciones de la cuenta de almacenamiento y los tipos de almacenamiento</strong></h4>
+            <p>La cuenta de almacenamiento proporciona un espacio de nombres único para los datos de Azure Storage que es accesible desde cualquier lugar del mundo mediante HTTP o HTTPS.</p>
+            <p>Tipos de almacenamiento:</p>
+            <ul>
+              <li>Almacenamiento de archivos para acceso distribuido.</li>
+              <li>Streaming de audio y vídeo.</li>
+              <li>Almacenamiento de datos para copia de seguridad y restauración, recuperación ante                                                         desastres y archivado.</li>
+              <li>Almacenamiento de datos para el análisis en local o en un servicio hospedado de Azure.</li>
+            </ul>
+            <h4><strong>Identificación de opciones para mover archivos, incluidos AzCopy, Explorador de Azure Storage y
+              Azure File Sync</strong></h4>
+              <p>Azure File Sync transforma Windows Server en una caché rápida de los recursos compartidos de archivos de Azure.</p>
+              <p>Explorador de Azure Storage nos permite buscar cualquier tipo de archivo de azure.</p>
+              <p>Azure File Sync permite la sincronización de Windows Server con un recurso compartido de archivos de Azure.</p>
+              <h4><strong>Descripción de las opciones de migración, incluidas Azure Migrate y Azure Data Box</strong></h4>
+              <p>La migracion a la nube es el proceso de mover las aplicaciones y los datos desde una ubicación.</p>
+              <p>Azure Migrate proporciona un centro de conectividad para realizar el seguimiento de la detección, evaluación y migración a Azure de las aplicaciones y cargas de trabajo locales.</p>
+              <p>Azure Data Box Gateway es una solución de almacenamiento que permite enviar fácilmente datos a Azure.</p>
             <p><a href="#slide=2"><strong>Volver</strong></a></p>
         </section>
         <section>
@@ -586,6 +624,28 @@
                 <li style="text-align: center;list-style-type: none;"><img src="static/images/Management.png" alt="Management" width="300"></li>
               </ul>
 
+              <h4><strong>Configuración de redes virtuales y firewalls de Azure Storage</strong></h2>
+              <p>Permite configurar las reglas del firewall en tu cuenta de almacenamiento para permitir o denegar el acceso a determinadas direcciones IP o rangos de direcciones IP. Esto ayuda a asegurar que solo las aplicaciones o servicios específicos tengan acceso a tu almacenamiento.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Configredes.png" alt="Configredes" width="300"></li>
+              </ul>
+              <h4><strong>Creación y uso de tokens de firma de acceso compartido (SAS)</strong></h4>
+              <p>Los tokens de firma de acceso compartido son una forma segura de proporcionar acceso limitado y temporal a recursos de almacenamiento. Puedes generar SAS tokens para los servicios de almacenamiento y especificar permisos, duración y condiciones de acceso.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Tokens.png" alt="Tokens" width="300"></li>
+              </ul>
+              <h4><strong>Configuración de las directivas de acceso almacenadas</strong></h4>
+              <p>Permite utilizar directivas de acceso almacenadas para definir reglas de acceso que se aplican a todos tus contenedores o recursos de almacenamiento. Esto facilita la gestión de permisos y la implementación consistente de políticas de seguridad.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Directivasdeacceso.png" alt="Directivasdeacceso" width="300"></li>
+              </ul>
+              <h4><strong>Administración de las claves de acceso</strong></h4>
+              <p>Una cuenta de Azure Storage usa como credenciales un nombre de cuenta y una clave. La clave se genera automáticamente y actúa como una contraseña y no como una clave criptográfica. Key Vault se utiliza para administrar las claves de la cuenta de almacenamiento, las regenera periódicamente en una cuenta de almacenamiento y proporciona tokens de firma de acceso compartido para el acceso delegado a los recursos de la cuenta de almacenamiento.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Clavesdeacceso.png" alt="Clavesdeacceso" width="300"></li>
+              </ul>
+              <h4><strong>Configuración del acceso basado en identidad para Azure Files</strong></h4>
+              <p>El acceso basado en identidad para Azure Files es la capacidad de controlar y administrar el acceso a los archivos almacenados en Azure Files utilizando identidades de Azure Active Directory. Esto permite una gestión más segura y centralizada de los permisos de acceso.</p>
               <p><a href="#slide=2"><strong>Volver</strong></a></p>
         </section>
         <section class="slide-bottom">
