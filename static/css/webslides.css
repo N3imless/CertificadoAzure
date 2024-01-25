@@ -301,8 +301,6 @@ img {
   height: auto;
   max-width: 100%; }
 
-img:hover {
-border: 2px white solid; }
 
 svg:not(:root) {
   overflow: hidden; }
