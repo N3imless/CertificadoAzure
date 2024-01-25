@@ -768,6 +768,74 @@
                 <li style="text-align: center;list-style-type: none;"><img src="static/images/UploadFiles.png" alt="UploadFiles" width="300"></li>
               </ul>
               <p>Podemos visualizar los blobs de un contenedor seleccionando el contenedor de una cuenta.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/VisualizarBlobs.png" alt="VisualizarBlobs" width="300"></li>
+              </ul>
+              <p>También podemos descargar y guardarlo en una ubicación local.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/downloadblobs.png" alt="downloadblobs" width="300"></li>
+              </ul>
+              <ul>
+                <li>Configuración de las capas de almacenamiento.</li>
+              </ul>
+              <p>Debemos tener en cuenta los factores a la hora de elegir la configuración del almacenamiento para mejorar su rendimiento y la resistencia de los datos. Si elegimos mal su clase de almacenamiento podemos poner en riesgo los datos, incluso una pérdida total en caso de error de hardware o puede dar lugar a un rendimiento menos óptimo.</p>
+              <p>Hay dos tipos:</p>
+              <ul>
+                <li><strong>Almacenamiento local: </strong>almacenamiento aprovisionado en las unidades de disco duro local de un nodo determinado. Este tipo de almacenamiento puede ser idóneo en términos de rendimiento, pero requiere un diseño específico para la redundancia de datos mediante la replicación de los datos en varios nodos.</li>
+                <li><strong>Almacenamiento remoto compartido: </strong>almacenamiento aprovisionado en algún dispositivo de almacenamiento remoto (por ejemplo, un dispositivo SAN, NAS o un servicio de almacenamiento en la nube, como EBS o Azure Files). Este tipo de almacenamiento proporciona redundancia de datos automáticamente, pero generalmente no es tan rápido como puede serlo el almacenamiento local.</li>
+              </ul>
+              <ul>
+                <li>Configuración de instantáneas y eliminación temporal para Azure Files</li>
+              </ul>
+              <p>Podemos crear instantáneas de los blobs, para guardar su estado, también administrarlas en Administrar historial y Administrar instantáneas tendremos una lista que muestran las todas instantáneas . </p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/administrarblobs.png" alt="administrarblobs" width="300"></li>
+              </ul>
+              <p>Se pueden crear recursos compartidos, pero podemos indicar desde que hora y fecha estarán compartidos. También podemos eliminarlos de forma temporal habilitando la opción y luego el período de retención de recursos compartidos de archivos en días del 1 a 365 días, por lo que quedarán eliminados temporalmente.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/recursoscompartidosBlobs.png" alt="recursoscompartidosBlobs" width="300"></li>
+              </ul>
+              <p>En recurso compartido de archivos, habilitamos Show deleted shares (Mostrar recursos compartidos eliminados) para mostrar los recursos compartidos que se han eliminado temporalmente.</p>
+              <p>Desde aquí se puede seleccionar recuperar en el recurso, para que vuelva a restaurar el recurso compartido. Se puede deshabilitar la eliminación temporal.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/FileShareBlobs.png" alt="recursoscompartidosBlobs" width="300"></li>
+              </ul>
+              <ul>
+                <li>Configuración de la administración del ciclo de vida de los blobs.</li>
+              </ul>
+              <p>En Administración del ciclo de vida tenemos la opción habilitar el seguimiento de hora de acceso, indicará el último acceso al blob, podemos indicar el tiempo que estará accesible.</p>
+              <p>La administración del ciclo de vida de Azure Storage, basada en reglas que definen un conjunto de acciones que deben realizarse en función de si una condición se cumple o no.</p>
+              <p>Condiciones:</p>
+              <ul>
+                <li>Número de días desde que se creó el blob.</li>
+                <li>Número de días desde que el blob se modificó por última vez.</li>
+                <li>Número de días desde que se accedió al blob por última vez.</li>
+              </ul>
+              <p>Por ejemplo , si se ha definido una acción para mover un blob de nivel de acceso frecuente al nivel de acceso esporádico si no se ha modificado durante 30 días.</p>
+              
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/lifecycle.png" alt="lifecycle" width="300"></li>
+              </ul>
+
+              <ul>
+                <li>Configuración del control de versiones de blobs</li>
+              </ul>
+
+              <p>La versión de un blob es como una instantánea del estado del blob, cuando se modifica un blob la versión actual pasa a ser una versión anterior.</p>
+              <p>Cuando se habilita, Azure Storage crea automáticamente una versión con un identificador único cuando se crea por primera vez un blob y cada vez que este se modifica posteriormente.</p>
+              <p>Puede usar la administración del ciclo de vida para eliminar automáticamente las versiones anteriores.</p>
+              <p>En Administración de datos, entramos a la pestaña de Protección de datos.</p>
+              <p>En la sección Seguimiento, seleccionamos Habilitar control de versiones para blobs, y después elegimos si quiere conservar todas las versiones o eliminarlas después de un período de tiempo.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/DataProtection.png" alt="DataProtection" width="300"></li>
+              </ul>
+              <p>En la pestaña de versiones podemos ver todas las versiones ordenadas por fecha,  incluso ver las borradas temporalmente en el caso que esto esté habilitado. Se borraran de forma permanente cuando haya pasado el tiempo indicado.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/blob1.png" alt="blob1" width="300"></li>
+              </ul>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/blob2.png" alt="blob2" width="300"></li>
+              </ul>
               <p><a href="#slide=2"><strong>Volver</strong></a></p>
         </section>
         <section class="slide-bottom">
