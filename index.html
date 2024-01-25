@@ -1032,6 +1032,64 @@
                 Las platillas de Azure Resource nos permiten implementar la infraestructura y configuración de un proyecto como código. En la plantilla se especifican los recursos que se van a implementar y sus propiedades. <br>
                 <img src="./static/images/Bicep.png">
               </p>
+            <h2><strong>Creación y configuración de máquinas virtuales</strong></h2>
+            <h4><strong>Creación de una máquina virtual</strong></h4>
+              <p>
+                Estas máquinas se crean desde Azure Portal. Accedemos a los <strong>Servicios</strong> > <strong>Máquinas virtuales</strong>.  <br>
+                <img src="./static/images/MV.png"><br>
+                En el lado derecho veremos un resumen del coste de los servicios que vamos seleccionando. <br>
+                <img src="./static/images/MV3.png"><br>
+                Antes de crear la máquina se hará una validación de todos los apartados que hemos rellenado, si todo es compatible y pueden ofrecer dicho servicio se creará la máquina virtual. <br>
+                <img src="./static/images/MV2.png"><br>
+              </p>
+            <h4><strong>Configuración de Azure Disk Encryption</strong></h4>
+              <p>
+                Azure Disk Encryption nos ayuda a proteger nuestros datos utilizando BitLocker para cifrarlos y se integra con Azure Key Vault el cual es un servicio que nos permite administrar las claves de Azure. <br>
+                <img src="./static/images/AzureDisk.png">
+              </p>
+            <h4><strong>Traspaso de MV a un grupo de recursos, una suscripción u otras regiones</strong></h4>
+              <p>
+                Se utiliza Azure Resource Mover, este nos permitirá escoger donde mover nuestras MV si a otra suscripción, grupo de recursos u otras regiones. <br>
+                <img src="./static/images/AzureMover.png"><br>
+                Normalmente las dependencias se validan automáticamente, pero si sigue apareciendo la opción de agregar dependencias podemos seleccionar manualmente las que queremos añadir utilizando el apartado de agregar dependencias. <br>
+                <img src="./static/images/Dependencias.png"><br>
+              </p>
+            <h4><strong>Administración de los tamaños de máquinas virtuales</strong></h4>
+              <p>
+                <img src="./static/images/Tamaño MV.png"><br>
+                Existen distintos tamaños de máquinas virtuales que se adecúan al trabajo que va a realizar la máquina virtual. Existen máquinas virtuales optimizadas para: <br>
+                <ul>
+                  <li>Uso general</li>
+                  <li>Uso del procesador</li>
+                  <li>Uso de memoria</li>
+                  <li>Almacenamiento</li>
+                  <li>GPU</li>
+                  <li>Alto rendimiento</li>
+                </ul>
+              </p>
+            <h4><strong>Administración de los discos de máquinas virtuales</strong></h4>
+              <p>
+                Con la administración de discos nos permite crear, exponer y ocultar discos duros virtuales. Estos discos actúan como discos duros físicos. Podemos contratar distintos tipos de disco, tanto por su tamaño como por su tipo, esto incrementa o reduce el precio en función del disco seleccionado. <br>
+                <img src="./static/images/disk.png">
+              </p>
+            <h4><strong>Implementación de máquinas virtuales en zonas de disponibilidad</strong></h4>
+              <p>
+                Las zonas de disponibilidad nos permiten mantener las aplicaciones y datos de las MV disponibles. Para ello se replica el contenido en tres zonas y en caso de que una falle seguirá manteniendo su disponibilidad en las otras. <br>
+                <img src="./static/images/Zone.png">
+              </p>
+            <h4><strong>Conjuntos de escalado de máquinas virtuales</strong></h4>
+              <p>
+                Un conjunto de escalado es un servicio que permite crear y administrar un conjunto de máquinas virtuales (Puede escalar hasta 1000) idénticas, estos están diseñados para proporcionar alta disponibilidad. <br>
+                <img src="./static/images/escalado.png"><br>
+                <ul>
+                  <li>Escalabilidad Automática</li>
+                  <li>Balanceo de Carga</li>
+                  <li>Administración sencilla</li>
+                  <li>Alta disponibilidad</li>
+                  <li>Configuración Flexible</li>
+                  <li>Integración con otros servicios</li>
+                </ul>
+              </p>
               <p><a href="#slide=2"><strong>Volver</strong></a></p>
         </section>
         <section class="slide-bottom">
