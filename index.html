@@ -665,6 +665,92 @@
               </ul>
               <h4><strong>Configuración del acceso basado en identidad para Azure Files</strong></h4>
               <p>El acceso basado en identidad para Azure Files es la capacidad de controlar y administrar el acceso a los archivos almacenados en Azure Files utilizando identidades de Azure Active Directory. Esto permite una gestión más segura y centralizada de los permisos de acceso.</p>
+              <h4><strong>Creación y configuración de cuentas de almacenamiento</strong></h4>
+              <p>Una cuenta de almacenamiento proporciona un espacio para almacenar datos de Azure Storage (tablas, archivos, etc) y poder acceder a ellos desde cualquier parte utilizando HTTP o HTTPS.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Cuentasdealmacenamiento.png" alt="Cuentasdealmacenamiento" width="300"></li>
+              </ul>
+              
+              <h4><strong>Redundancia de Azure Storage</strong></h4>
+              <p>La redundancia nos garantiza que la cuenta de almacenamiento no pierde los datos en caso de errores de hardware, interrupciones en la corriente eléctrica o desastres naturales. Esto lo consigue haciendo copias de seguridad.</p>
+              <p>Existen distintos tipos de redundancia:</p>
+              <ul>
+                <li><strong>Redundancia en la región primaria.</strong> Replica 3 veces los datos en la región primaria. Cuando una aplicación requiere alta disponibilidad se almacena en una región secundaria.
+                  <li><p><strong>Almacenamiento con redundancia local.</strong></p><img src="static/images/Priaryregion.png" alt="Priaryregion" width="300"><p>Almacena de forma sincronizada los datos tres veces dentro de una única ubicación física. Es la opción más barata.</p></li>
+                  <li><p><strong>Almacenamiento con redundancia de zona.</strong></p><img src="static/images/prymariregion2.png" alt="prymariregion2" width="300"><p>Almacena los datos tres veces, pero en distintas zonas disponibles de Azure. </p></li>
+                </li>
+              </ul>
+              <p><strong>Redundancia en una región secundaria. </strong>Guarda una de las copias realizadas en la región principal en una región secundaria a muchos kilometros de distancia, así en caso de apagones generales o problemas a gran escala sigue estando disponible el recurso.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Prymarisecondaryregion.png" alt="Prymarisecondaryregion" width="300"></li>
+              </ul>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Prymarisecondaryregion2.png" alt="Prymarisecondaryregion2" width="300"></li>
+              </ul>
+              <h4><strong>Cifrado de la cuenta de almacenamiento</strong></h4>
+              <p>Todos los datos de la cuenta de almacenamiento se cifran automáticamente. Al escoger el servicio de Azure nos permite elegir el tipo de algoritmo de cifrado.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/cuentaalmacenamiento.png" alt="cuentaalmacenamiento" width="300"></li>
+              </ul>
+              <h4><strong>Transferencia de datos a Azure Storage con AzCopy</strong></h4>
+              <p>Es una herramienta de línea de comandos que nos permite mover datos dentro y fuera de Azure Storage.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/Transferenciadedatos.png" alt="Transferenciadedatos" width="300"></li>
+              </ul>
+              <h1><strong>Implementación y administración del almacenamiento (15-20 %)(3º apartado)</strong></h1>
+              <h2><strong>Configuración de Azure Files y Azure Blob Storage</strong></h2>
+              <ul>
+                <li>Creación y configuración de un recurso compartido de archivos en Azure Storage</li>
+              </ul>
+              <p>Azure Storage ofrece almacenamiento de alta disponibilidad, escalable de forma masiva, duradero y seguro para una gran variedad de objetos de datos en la nube. A los objetos de datos de Azure Storage se puede acceder desde cualquier lugar del mundo a través de HTTP o HTTPS por medio de una API REST.</p>
+
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/ConfigAzureBlob.png" alt="ConfigAzureBlob" width="300"></li>
+              </ul>
+              <p>Antes crear el recurso debemos saber:</p>
+              <ul>
+                <li>Cuáles son los requisitos de rendimiento para el recurso compartido de archivos de Azure.</li>
+                <li>Cuáles son los requisitos de redundancia para el recurso compartido de archivos de Azure.</li>
+                <li>Qué tamaño de recurso compartido de archivos necesita.</li>
+              </ul>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/ConfigAzureBlob.png" alt="ConfigAzureBlob" width="300"></li>
+              </ul>
+              <p>Los recursos compartidos de archivos de Azure se implementan en cuentas de almacenamiento, que son objetos de nivel superior que representan un grupo compartido de almacenamiento.</p>
+              <p>Los recursos compartidos de archivos estándar pueden implementarse en uno de los niveles estándar: optimizado para transacciones (valor predeterminado), acceso frecuente o acceso esporádico. Independientemente del nivel de acceso de blob.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/niveldeaccesodeblob.png" alt="niveldeaccesodeblob" width="300"></li>
+              </ul>
+              <ul>
+                <li><strong>Nombre:</strong> nombre del recurso compartido de archivos que se va a crear.</li>
+                <li><strong>Nivel:</strong> nivel seleccionado para un recurso compartido de archivos estándar. </li>
+                <li><strong>Capacidad aprovisionada:</strong> solo para recursos compartidos de archivos prémium; la capacidad aprovisionada es la cantidad que se le facturará, independientemente del uso real.</li>
+                <li><strong>Copia de seguridad:</strong> la copia de seguridad se habilita/deshabilita al crear un recurso compartido de archivos de Azure mediante Azure Portal.</li>
+              </ul>
+              <p>Niveles:</p>
+              <p><strong>Grupos de recursos (Resource Groups):</strong> En Azure, los recursos se organizan y administran en grupos de recursos. Estos grupos permiten gestionar y organizar los recursos de manera lógica y eficiente. Los recursos dentro de un grupo de recursos pueden compartir ciertas propiedades y permisos.</p>
+              <ul>
+                <li><strong>1.Cuentas de almacenamiento (Storage Accounts):</strong> Azure ofrece cuentas de almacenamiento que pueden contener diversos tipos de datos, como blobs, archivos, tablas y colas. Los archivos almacenados en una cuenta de almacenamiento pueden ser compartidos a través de URL de acceso y configurando permisos de acceso.</li>
+                <li><strong>2.Compartir recursos mediante permisos y roles:</strong> En Azure, los permisos de acceso y los roles desempeñan un papel crucial en la administración de recursos compartidos. Puedes asignar roles a usuarios, grupos o servicios para determinar qué acciones pueden realizar en los recursos de Azure.</li>
+              </ul>
+              <ul>
+                <li><strong>Creación y configuración de un contenedor en Blob Storage</strong></li>
+              </ul>
+              <p>Azure Blob Storage es para almacenamiento de objetos de Microsoft en la nube. Blob Storage está optimizado para el almacenamiento de cantidades masivas de datos no estructurados. Un "blob″ es la abreviatura de Objeto grande binario.</p>
+              <p>Primero creamos una suscripción para nuestra cuenta, indicamos la nube de Azure. Luego indicamos la cuenta Azure con la que queremos trabajar desde administrador de cuentas. Una vez cerramos la sesión nos muestra todas las cuentas de Azure Storage, así como del almacenamiento local que se configuró mediante el emulador de almacenamiento Azurite o los entornos de Azure Stack.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/explorer.png" alt="explorer" width="300"></li>
+              </ul>
+              <p>Seleccionamos el contenedor de blobs y creamos uno, le indicamos el nombre que queremos y luego ya aparecerá en la carpeta de contenedores.</p>
+              <p>Blob Storage admite blobs en bloques, blobs en anexos y blobs en páginas. Los blobs en anexos se utilizan para el registro, por ejemplo, cuando desea escribir en un archivo y luego sigue agregando más información. La mayoría de los archivos almacenados en Blob Storage son blobs en bloques.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/explorer2.png" alt="explorer2" width="300"></li>
+              </ul>
+              <p>Se pueden cargar archivos o carpetas y el tipo se Blob, en el campo ″Cargar en Carpeta″ le ponemos un nombre para la carpeta donde se guardarán los archivos que subamos. Si no, se subirán directamente al contenedor. Se irán cargando al contenedor de uno en uno, podemos verlo des de la ventana de Actividades.</p>
+              <ul>
+                <li style="text-align: center;list-style-type: none;"><img src="static/images/UploadFiles.png" alt="UploadFiles" width="300"></li>
+              </ul>
+              <p>Podemos visualizar los blobs de un contenedor seleccionando el contenedor de una cuenta.</p>
               <p><a href="#slide=2"><strong>Volver</strong></a></p>
         </section>
         <section class="slide-bottom">
