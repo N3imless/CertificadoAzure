@@ -513,23 +513,28 @@
               <p>Microsoft Entra ID es un servicio de administración de identidades y acceso basado en la nube que permite a los empleados acceder a recursos externos. Entre los recursos de ejemplo se incluyen Microsoft 365, Azure Portal y miles de otras aplicaciones SaaS.</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/MicrosoftEntra3.png" alt="MicrosoftEntra3" width="300"></li>
               <p>El administrador puede asignar licencias a un grupo de usuarios que pertenecen a un departamento de una empresa, por ejemplo un grupo de seguridad en el que hay 1000 usuarios y le asigna licencias de Office 365 Enterprise E3 a todo el departamento. Después se debe comprobar en el apartado de licencias que se haya asignado correctamente.</p>
+            </section><section>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/MicrosoftEntra4.png" alt="MicrosoftEntra4" width="300"></li>
               <p>En el caso de que indique en su estado que ha habido un error podemos ver más información la columna asignaciones erróneas. La columna Motivo principal del error contiene la causa del error. Puede que un usuario ya tenga una licencia que le asigna otro grupo al que pertenece y esta nueva licencia que le otorga otro grupo entra en conflicto. Habría que quitarlo del grupo anterior para que Microsoft Entra ID se la asigne correctamente.</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/MicrosoftEntra5.png" alt="MicrosoftEntra5" width="300"></li>
               <li><strong>Administración de usuarios externos.</strong></li>
               <p>La gestión de identidad y acceso (Control de acceso IAM) es un modo de saber quién es un usuario y qué tiene permiso para hacer. El administrador puede ponerle un rol, por ejemplo, de suscriptor a un usuario invitado y le dará los permisos que considere. Como que tenga acceso al un grupo específico.</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/MicrosoftEntra6.png" alt="MicrosoftEntra6" width="300"></li>
+            </section><section>
               <p>A través de el email del invitado se le enviará la notificación de la invitación, una vez termine se debe eliminar al usuario invitado de la asignación de roles y de Microsoft Entra ID</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/MicrosoftEntra7.png" alt="MicrosoftEntra7" width="300"></li>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/MicrosoftEntra8.png" alt="MicrosoftEntra8" width="300"></li>
+            </section><section>
               <li><strong>Configuración del autoservicio de restablecimiento de contraseña (SSPR)</strong></li>
               <p>SSPR permite a los usuarios restablecer su contraseña de forma segura usando los mismos métodos que usan para la autenticación multifactor de Microsoft Entra sin necesidad de que intervenga el administrador o soporte técnico.</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/SSPRUserFlow.png" alt="SSPRUserFlow" width="300"></li>
               <p>En las propiedades dentro de protección tenemos la opción de restablecimiento de contraseña, si no está visible el grupo que queremos indicamos que “ninguno” y seleccionaremos el grupo de Microsoft Entra, como SSPR-Test-Group.</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/MicrosoftEntra9.png" alt="MicrosoftEntra9" width="300"></li>
+            </section><section>
               <p>Luego en métodos de autentificación indicaremos el número de métodos queremos que use. Esta información la puede proporcionar el administrador o el usuario desde el portal de registro.</p>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/Puntos.png" alt="Puntos" width="300"></li>
             </ul>
+          </section><section>
             <h2>Administración del acceso de usuarios a los recursos de Azure</h2>
             <ul>
               <li>Administración de roles de Azure integrados.</li>
@@ -538,6 +543,7 @@
               <p>Los roles integrados tienen unos permisos específicos para cada uno de ellos, si no satisfacen las necesidades concretas de la organización se pueden crear roles personalizados de Azure propios.
                 Puede buscar permisos por palabra clave, como permisos de máquina virtual o de facturación. También puede descargar todos los permisos como un archivo CSV y, a continuación, buscar en este archivo.</p>
             </ul>
+          </section><section>
             <h2>Administración del acceso de usuarios a los recursos de Azure</h2>
             <ul>
               <li><strong>Administración de roles de Azure integrados.</strong></li>
@@ -547,6 +553,7 @@
               <li style="text-align: center;list-style-type: none;"><img src="static/images/RBAC.png" alt="RBAC" width="300"></li>
             </ul>
             <p>Los roles integrados tienen unos permisos específicos para cada uno de ellos, si no satisfacen las necesidades concretas de la organización se pueden crear roles personalizados de Azure propios.</p>
+          </section><section>
             <p>Puede buscar permisos por palabra clave, como permisos de máquina virtual o de facturación. También puede descargar todos los permisos como un archivo CSV y, a continuación, buscar en este archivo.</p>
             <ul>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/Billing permissions.png" alt="Billing permissions" width="300"></li>
@@ -566,6 +573,7 @@
             <ul>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/FIMDEV.png" alt="FIMDEV" width="300"></li>
             </ul>
+          </section><section>
             <ul>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/Billing admin.png" alt="Billing admin" width="300"></li>
             </ul>
@@ -576,11 +584,13 @@
             <ul>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/Testapp.png" alt="Testapp" width="300"></li>
             </ul>
+          </section><section>
             <h2><strong>Implementación y administración de Azure Policy</strong></h2>
             <p>Azure Policy es un servicio de microsoft que nos permite administrar políticas de gestión y garantizar que se cumplan. Estas políticas pueden estar referidas a medidas de seguridad o incluso gestión de costes y recursos.</p>
             <ul>
               <li style="text-align: center;list-style-type: none;"><img src="static/images/AzurePolicy.png" alt="AzurePolicy" width="300"></li>
             </ul>
+          </section><section>
             <h2><strong>Configuración de bloqueos de recursos</strong></h2>
             <p>Un administrador puede bloquear un recurso, grupo de recursos o suscripciones para que no puedan ser eliminados o modificados. Esto invalida los permisos que pueda tener un usuario.
               Esto podemos realizarlo a nivel gráfico añadiendo lo bloqueo a Eliminar y Solo Lectura. Y en línea de comandos se llama <strong>CanNotDelete</strong> y <strong>ReadOnly</strong>.</p>
